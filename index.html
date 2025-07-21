@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TikTok Video Downloader</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ff9a9e" />
+  <link rel="icon" href="icon-192.png" type="image/png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TikTok Video Downloader</h1>
+
+    <div class="input-group">
+      <input type="url" id="url" placeholder="Paste TikTok video link here" required />
+      <button onclick="startDownload()">Download</button>
+    </div>
+
+    <div id="result"></div>
+
+    <div id="history">
+      <strong>📁 Download History:</strong>
+      <ul id="history-list"></ul>
+    </div>
+
+    <p class="note">No watermark. Works on all devices.</p>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
